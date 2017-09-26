@@ -60,4 +60,10 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public boolean major(Fraction fraction) {
+    	int num1 = this.numerator* fraction.denominator;
+    	int num2 = fraction.numerator* this.denominator;
+    	return num1>num2;
+    }
+    
 }
