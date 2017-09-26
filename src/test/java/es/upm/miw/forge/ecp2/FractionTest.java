@@ -32,11 +32,23 @@ public class FractionTest {
         assertEquals(2, fraction.getDenominator());
         assertEquals(5, fraction.getNumerator());
     }
+
     @Test
     public void testMayor() { 
     	Fraction fractionAux = new Fraction(4,2);
 		fraction = new Fraction(numerator, denominator); 
         assertEquals(true, fraction.major(fractionAux));
     }
+
+    
+    @Test
+    public void testDivide() {
+    	fraction = new Fraction (numerator, denominator);
+    	Fraction aux = new Fraction (3,5);
+    	this.fraction.divide(aux);
+    	
+    	assertEquals(this.fraction.getNumerator(),25);
+    	assertEquals(this.fraction.getDenominator(),6);
+    }   
 
 }

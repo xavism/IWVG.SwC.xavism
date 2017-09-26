@@ -66,4 +66,11 @@ public class Fraction {
     	return num1>num2;
     }
     
+    public void divide(Fraction b) {
+    	
+    	this.numerator = this.numerator * b.denominator;
+    	this.denominator = this.denominator * b.numerator;
+    	
+    }
+    
 }
