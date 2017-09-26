@@ -45,4 +45,14 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double average() {
+    	assert this.size()>0;
+    	
+    	double result = 0.0;
+    	for (double item : this.collection) {
+    		result = result + item;
+    	}
+    	
+    	return result/this.size();
+    }
 }
