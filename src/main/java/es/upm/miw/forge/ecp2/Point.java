@@ -42,4 +42,12 @@ public class Point {
         return "Point[" + x + "," + y + "]";
     }
     
+    public void revert() {
+    	int xAux = this.x;
+    	int yAux = this.y;
+    	this.x = yAux;
+    	this.y =  xAux;
+    }
+
+    
 }
