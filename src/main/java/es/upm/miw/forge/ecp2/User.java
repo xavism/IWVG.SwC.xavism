@@ -30,4 +30,13 @@ public class User {
     public String initials() {
         return this.name.substring(0, 1) + ".";
     }
+    
+    public void nameToUpperCase() {
+        String upperCaseName = this.getName().toUpperCase();
+        String upperCaseFamilyName = this.getFamilyName().toUpperCase();
+        String upperCaseFullName = upperCaseName + " " + upperCaseFamilyName;
+        
+        return upperCaseFullName
+    }
+    
 }
