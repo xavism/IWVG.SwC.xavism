@@ -40,11 +40,8 @@ public class UserTest {
     }
     
     @Test
-    public void testConvertToUpperCase() {
-        user = new User(2, name, familyName); 
-        user.convertToUpperCase();
-        assertEquals("XAVI", user.getName());
-        assertEquals("SANCHEZ", user.getFamilyName());
+    public void testNameToUpperCase() {
+        assertEquals("XAVI", user.nameToUpperCase());
     }
 
 }

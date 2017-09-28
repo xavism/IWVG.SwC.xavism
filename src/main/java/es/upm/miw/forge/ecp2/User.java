@@ -32,11 +32,8 @@ public class User {
     }
     
     public String nameToUpperCase() {
-        String upperCaseName = this.getName().toUpperCase();
-        String upperCaseFamilyName = this.getFamilyName().toUpperCase();
-        String upperCaseFullName = upperCaseName + " " + upperCaseFamilyName;
         
-        return upperCaseFullName;
+        return this.name.toUpperCase();
     }
     
 }
