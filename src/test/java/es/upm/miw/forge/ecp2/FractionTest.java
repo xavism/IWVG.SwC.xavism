@@ -23,7 +23,7 @@ public class FractionTest {
     @Test
     public void testDecimal() {
     		fraction = new Fraction(numerator, denominator); 
-        assertEquals(2.5, fraction.decimal(), 2);
+        assertEquals(2.5, fraction.decimal(), 10e-5);
     }
     
     @Test
@@ -47,8 +47,8 @@ public class FractionTest {
     	Fraction aux = new Fraction (3,5);
     	this.fraction.divide(aux);
     	
-    	assertEquals(this.fraction.getNumerator(),25);
-    	assertEquals(this.fraction.getDenominator(),6);
+    	assertEquals(25, this.fraction.getNumerator());
+    	assertEquals(6, this.fraction.getDenominator());
     }   
 
     @Test

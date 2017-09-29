@@ -57,7 +57,7 @@ public class DecimalCollectionTest {
 	
 	@Test
 	public void testAverage() {		
-		assertEquals(this.decimalCollection.average(),1.5,10e-4);
+		assertEquals(1.5, this.decimalCollection.average(),10e-4);
 	}
 
 }
