@@ -74,11 +74,9 @@ public class Fraction {
     }
     
     public Fraction multiply(Fraction fractionToMultiply) {
-        int newNumerator = this.getNumerator() * fractionToMultiply.getNumerator();
-        int newDenominator = this.getDenominator() * fractionToMultiply.getDenominator();
-        newFraction = new Fraction (newNumerator, newDenominator);
-        
-        return newFraction;
+        int newNumerator = this.numerator * fractionToMultiply.getNumerator();
+        int newDenominator = this.denominator * fractionToMultiply.getDenominator();
+        return new Fraction (newNumerator, newDenominator);
     }
     
 }
