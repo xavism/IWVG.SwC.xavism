@@ -17,25 +17,23 @@ public class UserTest {
     public void before() {
         name = "xavi";
         familyName = "sanchez";
+        user = new User(name, familyName);
     }
 
 
     @Test
     public void testFullName() {
-    		user = new User(2, name, familyName); 
         assertEquals("Xavi Sanchez", user.fullName());
     }
     
     @Test
     public void testGetters() {
-    		user = new User(2, name, familyName); 
         assertEquals("Sanchez", user.getFamilyName());
         assertEquals("Xavi", user.getName());
     }
 
     @Test
     public void testInitials() {
-    		user = new User(2, name, familyName); 
         assertEquals("X.", user.initials());
     }
     

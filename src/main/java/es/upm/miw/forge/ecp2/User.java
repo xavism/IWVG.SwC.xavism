@@ -10,7 +10,7 @@ public class User {
         return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 
-    public User(int number, String name, String familyName) {
+    public User(String name, String familyName) {
         this.name = this.format(name);
         this.familyName = this.format(familyName);
     }
