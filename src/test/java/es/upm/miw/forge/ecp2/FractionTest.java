@@ -54,7 +54,10 @@ public class FractionTest {
     @Test
     public void testMultiply() {
         Fraction fraction = new Fraction(1,2);
-        assertEquals(1, obj.multiply(fraction), 10e-5);
+        Fraction fraction2 = new Fraction(1,2);
+        Fraction fractionMultiplied = fraction.multiply(fraction2);
+        assertEquals(fractionMultiplied.getNumerator(), 1);
+        assertEquals(fractionMultiplied.getDenominator(), 4);
     }
     
 }
